@@ -158,3 +158,24 @@ function addNum(num1, num2) {
 
 const sum = addNum(4, 5);
 console.log(sum);
+/*
+const addNums = (num1, num2) => {
+  console.log(num1 + num2);
+};
+addNums(3, 4);
+*/
+//OR
+
+const addNums = (num1, num2) => num1 + num2;
+
+console.log(addNums(3, 4)); // no need of RETURN
+
+//Constructor function
+function Person(name, dob) {
+  this.name = name;
+  this.dob = dob;
+}
+const person1 = new Person("saurabh", "19-08-1997");
+const person2 = new Person("Phalguni", "27-08-1994");
+const person3 = new Person("Aanchal", "06-08-1997");
+console.log(person1, person2.name, person3);
