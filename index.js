@@ -80,3 +80,48 @@ const todo = [
 console.log(todo[0].id, todo[2].id, todo[2].text);
 const todoJSON = JSON.stringify(todo); //convert Array Object into JSON type to send via server
 console.log(todoJSON);
+
+//FOR loops
+
+for (let i = 0; i < 10; i += 2) {
+  console.log(`For loop number ${i}`);
+}
+
+//While loop
+
+let i = 0;
+while (i < 10) {
+  console.log(i * 2);
+  i += 2;
+}
+
+//Apply for loop in Todos ( Array Object)
+console.log(todo.length);
+for (let i = 0; i < todo.length; i++) {
+  console.log(`My ${i + 1} task is "${todo[i].text}" with id : ${todo[i].id}`);
+}
+
+//foreach, map, filter
+console.log(`For each impl.`);
+todo.forEach(function(todo) {
+  console.log(todo.text);
+});
+
+//MAP
+//Return type is Array
+/*
+const todoText = todo.map(function(todo) {
+  return todo.text;
+});
+console.log(todoText);
+*/
+//Filter
+
+const todoDone = todo
+  .filter(function(todo) {
+    return todo.isDone === false;
+  })
+  .map(function(todo) {
+    return todo.text;
+  });
+console.log(todoDone);
