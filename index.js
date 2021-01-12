@@ -1,6 +1,7 @@
 console.log(`hello`);
 
 //let cont  !Block level scope
+/*
 const age = 23;
 const name = "saurabh";
 
@@ -27,7 +28,7 @@ cars.push("Bmw");
 cars.unshift("jaguar");
 console.log(cars);
 //console.log(typeof name); //gives the type
-
+*/
 //OBJECTS
 
 const details = {
@@ -41,4 +42,20 @@ const details = {
     State: "Uttarakhand"
   }
 };
+console.log(details);
+console.log(details.name, details.age);
+console.log(details.hobbies[1]);
+
+const {
+  name,
+  age,
+  dob,
+  address: { street, State }
+} = details;
+console.log(name);
+console.log(dob);
+console.log(street);
+console.log(State);
+
+details.email = "saurabh.sheshank@gmail.com";
 console.log(details);
