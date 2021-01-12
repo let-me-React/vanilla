@@ -174,8 +174,11 @@ console.log(addNums(3, 4)); // no need of RETURN
 function Person(name, dob) {
   this.name = name;
   this.dob = dob;
+  this.getNameDob = function() {
+    return `${this.name} ${this.dob}`;
+  };
 }
 const person1 = new Person("saurabh", "19-08-1997");
 const person2 = new Person("Phalguni", "27-08-1994");
 const person3 = new Person("Aanchal", "06-08-1997");
-console.log(person1, person2.name, person3);
+console.log(person1.getNameDob());
