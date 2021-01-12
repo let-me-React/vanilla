@@ -1,5 +1,3 @@
-console.log(`hello`);
-
 //let cont  !Block level scope
 /*
 const age = 23;
@@ -30,7 +28,7 @@ console.log(cars);
 //console.log(typeof name); //gives the type
 */
 //OBJECTS
-
+/*
 const details = {
   name: "Saurabh G",
   age: 23,
@@ -103,7 +101,7 @@ for (let i = 0; i < todo.length; i++) {
 
 //foreach, map, filter
 console.log(`For each impl.`);
-todo.forEach(function(todo) {
+//todo.forEach(function(todo) {
   console.log(todo.text);
 });
 
@@ -116,12 +114,47 @@ const todoText = todo.map(function(todo) {
 console.log(todoText);
 */
 //Filter
-
-const todoDone = todo
-  .filter(function(todo) {
+/*
+const todoDone = todo.filter(function(todo) {
     return todo.isDone === false;
-  })
-  .map(function(todo) {
-    return todo.text;
+  }).map(function(todo) {
+return todo.text;
   });
 console.log(todoDone);
+*/
+//COnditonal op
+/*
+const x = "10";
+if (x === 10) {
+  console.log("TRUE x is 10");
+} else {
+  console.log("x is not 10");
+  console.log(`x is of ${typeof x}`);
+}*/
+/*
+const x = 10;
+//const color = x > 102 ? "red" : "blue";
+//console.log(color);
+const color = "blue";
+//SWITCHES
+
+switch (color) {
+  case "red":
+    console.log(`color is red`);
+    break;
+  case "blue":
+    console.log(`color is blue`);
+    break;
+  default:
+    console.log(`not a match`);
+}
+*/
+
+//FUNCTIONS
+function addNum(num1, num2) {
+  return num1 + num2;
+}
+//addNum(); // will return NaN
+
+const sum = addNum(4, 5);
+console.log(sum);
