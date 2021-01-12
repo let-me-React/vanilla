@@ -1,8 +1,9 @@
-console.log("hello");
+console.log(`hello`);
 
 //let cont  !Block level scope
 const age = 23;
-let count = 4;
-count = 6;
-console.log(age);
+const name = "saurabh";
+
+const string = `My name is ${name} and age is ${age}`;
+console.log(string);
 //age = 3;
