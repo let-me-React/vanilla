@@ -59,3 +59,24 @@ console.log(State);
 
 details.email = "saurabh.sheshank@gmail.com";
 console.log(details);
+
+const todo = [
+  {
+    id: 1,
+    text: "write the code",
+    isDone: true
+  },
+  {
+    id: 2,
+    text: "Draw Template",
+    isDone: true
+  },
+  {
+    id: 3,
+    text: "Make the Wireframe",
+    isDone: false
+  }
+];
+console.log(todo[0].id, todo[2].id, todo[2].text);
+const todoJSON = JSON.stringify(todo); //convert Array Object into JSON type to send via server
+console.log(todoJSON);
