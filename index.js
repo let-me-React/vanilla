@@ -182,3 +182,4 @@ const person1 = new Person("saurabh", "19-08-1997");
 const person2 = new Person("Phalguni", "27-08-1994");
 const person3 = new Person("Aanchal", "06-08-1997");
 console.log(person1.getNameDob());
+console.log(person1);
